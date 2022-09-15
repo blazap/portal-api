@@ -3,6 +3,7 @@ const cors = require('cors');
 const { expressjwt: expressJwt } = require('express-jwt');
 const jwks = require('jwks-rsa');
 const axios = require('axios');
+require('dotenv').config({path: './.env'});
 
 const app = express();
 app.use(cors());
